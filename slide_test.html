@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide test</title>
+		<link rel="stylesheet" href="slide_style.css">
+</head>
+<body style="margin:0;">
+	<div style="overflow: hidden;">
+		<div class="container"">
+			<div class="inner">
+				<img src="/img/slide1.jpg" alt="">
+			</div>
+			<div class="inner">
+				<img src="/img/slide2.jpg" alt="">
+			</div>
+			<div class="inner">
+				<img src="/img/slide3.jpg" alt="">
+			</div>
+		</div>
+		
+		<button class="버튼1">1</button>
+		<button class="버튼2">2</button>
+		<button class="버튼3">3</button>
+
+	</div>
+
+	<script>
+		//버튼2를 누르면 -100vw 이동
+		document.querySelector('.버튼2').addEventListener('click', function(){
+			document.querySelector('.container').style.transform = 'translate(-100vw)';
+		})
+
+		document.querySelector('.버튼3').addEventListener('click', function(){
+			document.querySelector('.container').style.transform = 'translate(-200vw)';
+		})
+
+		document.querySelector('.버튼1').addEventListener('click', function(){
+			document.querySelector('.container').style.transform = 'translate(0vw)';
+		})
+
+	</script>
+</body>
+</html>
